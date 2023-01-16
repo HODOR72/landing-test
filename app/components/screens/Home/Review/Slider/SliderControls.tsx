@@ -9,7 +9,7 @@ import { slides } from './Slider.data'
 import styles from './Slider.module.scss'
 
 interface ISliderControls {
-	setActiveSlide: (arg: any) => void
+	setActiveSlide: (arg: number) => void
 	activeSlide: number
 }
 

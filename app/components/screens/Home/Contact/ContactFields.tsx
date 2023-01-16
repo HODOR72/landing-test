@@ -4,9 +4,10 @@ import { FieldValues, FormState, UseFormRegister } from 'react-hook-form'
 import { Field } from '@/components/ui'
 
 import { validEmail, validPhone } from '@/shared/regex'
+import { IContactInput } from '@/shared/types'
 
 interface IContactFields {
-	register: UseFormRegister<any>
+	register: UseFormRegister<IContactInput>
 	formState: FormState<FieldValues>
 }
 
