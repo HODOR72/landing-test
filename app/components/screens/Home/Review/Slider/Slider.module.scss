@@ -1,0 +1,40 @@
+.slider {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+
+	.info {
+		margin-right: 23px;
+		padding-top: 70px;
+	}
+	.gallery {
+		display: flex;
+		gap: 24px;
+	}
+}
+.controls {
+	display: flex;
+	align-items: center;
+	margin-left: auto;
+	max-width: 807px;
+	width: 100%;
+	justify-content: space-between;
+	margin-bottom: 16px;
+	> div {
+		display: flex;
+	}
+	> div:nth-child(1) {
+		> sup {
+			padding-left: 8px;
+		}
+	}
+	> div:nth-child(2) {
+		justify-content: space-between;
+		width: 100px;
+		> button {
+			background-color: transparent;
+			border: none;
+			cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,8 @@
+export { default as About } from './About/About'
+export { default as Contact } from './Contact/Contact'
+export { default as Effects } from './Effects/Effects'
+export { default as Gallery } from './Gallery/Gallery'
+export { default as Questions } from './Questions/Questions'
+export { default as Review } from './Review/Review'
+export { default as Steps } from './Steps/Steps'
+export { default as Technologies } from './Technologies/Technologies'

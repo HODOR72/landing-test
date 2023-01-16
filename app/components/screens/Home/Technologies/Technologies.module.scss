@@ -1,0 +1,52 @@
+.technologies {
+	margin-bottom: 184px;
+	> div {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+		.technology::before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(
+				152.14deg,
+				rgba(21, 191, 253, 0.7) 9.96%,
+				rgba(156, 55, 253, 0.7) 100%
+			);
+			clip-path: polygon(
+				0 0,
+				100% 0,
+				100% calc(100% - 36px),
+				calc(100% - 36px) 100%,
+				0 100%,
+				0 0,
+				1px 1px,
+				1px calc(100% - 1px),
+				calc(100% - 36px - 0.41px) calc(100% - 1px),
+				calc(100% - 1px) calc(100% - 36px - 0.41px),
+				calc(100% - 1px) 1px,
+				1px 1px
+			);
+		}
+		.technology {
+			background: rgba(255, 255, 255, 0.05);
+			backdrop-filter: blur(5px);
+			padding: 25px 10px;
+			position: relative;
+			--mask: linear-gradient(-45deg, #0000 25.46px, #000 0);
+			-webkit-mask: var(--mask);
+			mask: var(--mask);
+
+			> p {
+				font-family: 'Clash Display';
+				font-size: 24px;
+				line-height: 120%;
+				text-align: center;
+				padding-top: 16px;
+			}
+		}
+	}
+}

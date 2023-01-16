@@ -1,0 +1,82 @@
+.questions {
+	margin-bottom: 180px;
+	> div {
+		display: flex;
+		justify-content: space-between;
+		> div:nth-child(1) {
+			position: relative;
+			> img {
+				position: absolute;
+				left: -200px;
+				top: -100px;
+				z-index: -1;
+			}
+		}
+		.block:before {
+			content: '';
+			position: absolute;
+			inset: 0;
+			background: linear-gradient(
+				152.14deg,
+				rgba(21, 191, 253, 0.7) 9.96%,
+				rgba(156, 55, 253, 0.7) 100%
+			);
+			clip-path: polygon(
+				0 34px,
+				34px 0,
+				100% 0,
+				100% calc(100% - 34px),
+				calc(100% - 34px) 100%,
+				0 100%,
+				0 34px,
+				1px calc(34px + 0.41px),
+				1px calc(100% - 1px),
+				calc(100% - 34px - 0.41px) calc(100% - 1px),
+				calc(100% - 1px) calc(100% - 34px - 0.41px),
+				calc(100% - 1px) 1px,
+				calc(34px + 0.41px) 1px,
+				1px calc(34px + 0.41px)
+			);
+		}
+		.block {
+			position: relative;
+			background: rgba(255, 255, 255, 0.05);
+			padding: 24px 27.5px;
+			cursor: pointer;
+			width: 703px;
+			margin-bottom: 24px;
+			user-select: none;
+			--mask: linear-gradient(
+				-45deg,
+				#0000 24.04px,
+				#000 0 calc(100% - 24.04px),
+				#0000 0
+			);
+			-webkit-mask: var(--mask);
+			mask: var(--mask);
+			> div {
+				display: flex;
+				align-items: center;
+				> img {
+					width: 15px;
+				}
+			}
+			> p {
+				max-width: 606px;
+				text-align: start;
+				width: 100%;
+			}
+			.hidden {
+				display: none;
+			}
+		}
+		> div:nth-child(1) {
+			> p {
+				width: 280px;
+			}
+		}
+		> div:last-child {
+			margin-bottom: 0px;
+		}
+	}
+}

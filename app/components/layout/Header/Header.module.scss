@@ -1,0 +1,36 @@
+.header {
+	background: url('../../../assets/images/bg.png') no-repeat center / cover;
+	padding-bottom: 202px;
+	> div {
+		> div {
+			display: flex;
+			align-items: center;
+			> h1,
+			h2 {
+				font-family: 'Clash Display';
+				font-style: normal;
+				font-weight: 600;
+				font-size: 150px;
+				line-height: 120%;
+				white-space: nowrap;
+			}
+			> h2 {
+				margin-left: 24px;
+			}
+			> p {
+				line-height: 140%;
+				width: 360px;
+			}
+		}
+		> div:nth-child(2) {
+			justify-content: space-between;
+		}
+		> p {
+			font-family: 'Clash Display';
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 120%;
+			text-align: right;
+		}
+	}
+}

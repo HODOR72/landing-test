@@ -1,0 +1,38 @@
+.wrapper {
+	position: relative;
+	.field {
+		> input {
+			width: 100%;
+			padding: 24px;
+			outline: none;
+			color: #fff;
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 8px;
+			border: none;
+			transition: all 0.3s ease;
+			position: relative;
+			margin-bottom: 4px;
+			font-size: 16px;
+		}
+		> input:active {
+			color: #fff;
+		}
+		> input::placeholder {
+			color: #a2cbfb;
+			font-size: 16px;
+		}
+		> input:disabled {
+			background: rgba(255, 255, 255, 0.05);
+			border: 1px solid #636363;
+			color: #636363;
+		}
+		> input:disabled::placeholder {
+			color: #636363;
+		}
+		.fieldError {
+			background: rgba(255, 165, 165, 0.2);
+			border: 1px solid #fd4646;
+			color: #fff;
+		}
+	}
+}

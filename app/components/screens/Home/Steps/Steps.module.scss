@@ -1,0 +1,79 @@
+.steps {
+	margin-bottom: 180px;
+	> div {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		justify-content: space-between;
+		position: relative;
+		.step {
+			padding: 24px;
+			width: 475px;
+			position: relative;
+			background: rgba(255, 255, 255, 0.05);
+			border-radius: 8px;
+			border: 1px solid;
+			border-image: linear-gradient(
+					152.14deg,
+					rgba(21, 191, 253, 0.7) 9.96%,
+					rgba(156, 55, 253, 0.7) 100%
+				)
+				1;
+
+			> p {
+				text-align: start;
+			}
+			> p:nth-child(1) {
+				margin-bottom: 16px;
+			}
+			> p:nth-child(2) {
+				margin-bottom: 16px;
+			}
+			> p:nth-child(3) {
+				color: #a2cbfb;
+				line-height: 140%;
+				width: 400px;
+			}
+			> img {
+				position: absolute;
+				right: -18px;
+				top: -18px;
+			}
+			.arrow {
+				top: 44%;
+				transform: translateY(-50%);
+				right: -147px;
+				width: 80px;
+				z-index: 1;
+			}
+			.arrowLeft {
+				left: -147px;
+				transform: translateY(-50%) rotate(180deg);
+			}
+		}
+		.step:nth-child(odd) {
+			margin-bottom: 144px;
+		}
+		.step:nth-child(even) {
+			margin-top: 144px;
+			margin-left: auto;
+		}
+		.stepLeft {
+			transform: rotate(180deg);
+			left: -20px;
+		}
+		.line {
+			background: linear-gradient(
+				180deg,
+				#1ff2ff 0%,
+				#27f9e5 52.66%,
+				#2fffcd 100%
+			);
+			position: absolute;
+			height: 81%;
+			width: 4px;
+			top: 78px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+}

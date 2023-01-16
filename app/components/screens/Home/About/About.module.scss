@@ -1,0 +1,46 @@
+.about {
+	margin-bottom: 179px;
+	> div {
+		display: flex;
+		justify-content: space-between;
+
+		.mentors {
+			display: flex;
+			justify-content: space-between;
+			padding-top: 108px;
+			position: relative;
+			gap: 25px;
+			> img {
+				position: absolute;
+				top: 3px;
+				left: 50%;
+				transform: translateX(-50%);
+			}
+			> div {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: relative;
+				z-index: 1;
+				width: 185px;
+				> img {
+					margin-bottom: 16px;
+					margin-right: auto;
+				}
+				> p {
+					font-size: 14px;
+					line-height: 140%;
+				}
+			}
+			> div:nth-of-type(odd) {
+				padding-top: 43px;
+			}
+		}
+		> p {
+			padding-top: 120px;
+			line-height: 140%;
+			max-width: 486px;
+			width: 100%;
+		}
+	}
+}
